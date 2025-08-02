@@ -17,7 +17,9 @@ public class LaunchGetRecord {
         try {
             session = sessionFactory.openSession();
             Student st = session.find(Student.class, 1);
+            Student student = session.getReference(Student.class, 3);
             System.out.println(st);
+            System.out.println(student);
         }
         catch(HibernateException e){
             e.printStackTrace();

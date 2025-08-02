@@ -31,7 +31,7 @@ public class LaunchSelectiveUsingTransient {
             emp.setAge(24);
 
             // Even after explicitly mentioning city this attribute will not be added
-            // in the BD column because of Transeint annotation
+            //  in the BD column because of Transeint annotation
             emp.seteCity("Darbhanga");
 
             session.persist(emp);
